@@ -54,9 +54,7 @@ echo 0 > /sys/class/gpio/gpio29/value # grounded
 sleep 1 # Is needed to make it reliable
 echo 1 > /sys/class/gpio/gpio29/value # isolated
 
-#orig#avrdude -c linuxgpio -C /etc/avrdude.conf -p m32u4 -U lfuse:w:0xFF:m -U hfuse:w:0xD8:m -U efuse:w:0xCB:m -Uflash:w:$1:i $2
 avrdude  -c arduino -b 57600 -P /dev/ttyATH0 -C /etc/avrdude.conf -p m328p -U lfuse:w:0xFF:m -U hfuse:w:0xDA:m -U efuse:w:0x05:m -Uflash:w:$1:i $2
-#tut#avrdude -V -p m328p -c arduino -b 57600 -P /dev/ttyATH0 -C /etc/avrdude.conf -U flash:w:$1 $2 ## 115200
 
 EOF
 chmod a+x /usr/bin/run-avrdude
