@@ -4,6 +4,8 @@ Arduino Yun functionality using a $20 WR703N router and a $3 Arduino Pro Mini.
 
 This allows you to upload sketches to the Arduino Pro Mini over Ethernet or WLAN from the Arduino IDE, just like with the Arduino Yun.
 
+![duino](https://cloud.githubusercontent.com/assets/2480569/3007599/9333e534-de92-11e3-8295-f1a7c1f282f3.jpg)
+
 So far I did not attempt to port the Bridge, since it seems rather bloated to me.
 
 Materials used
