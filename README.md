@@ -1,6 +1,6 @@
 poor-mans-yun
 =============
-Arduino Yun functionality using $20 WR703N router and $3 Arduino Pro Mini.
+Arduino Yun functionality using a $20 WR703N router and a $3 Arduino Pro Mini.
 
 This allows you to upload sketches to the Arduino Pro Mini over Ethernet or WLAN from the Arduino IDE, just like with the Arduino Yun.
 
