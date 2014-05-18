@@ -16,6 +16,7 @@ Soldering
  * Solder Arduino pin RST to WR703N GPIO 29 signal = R17-South
  * Solder Arduino pin RX to WR703N TP_OUT signal = C55-West
  * Solder Arduino pin TX to WR703N TP_IN signal = R82-North
+ * 
 For information on the WR703N pins, see http://wiki.openwrt.org/toh/tp-link/tl-wr703n#gpios
 
 Preparing Arduino IDE
@@ -24,6 +25,7 @@ Edit boards.txt so that it contains the following line:
 ````
 pro.upload.via_ssh=true
 ```
+
 Preparing WR703N
 ----------------
 Install OpenWrt on the WR703N. Then install the "announce" package and finally run the script from this repository on the WR703N.
