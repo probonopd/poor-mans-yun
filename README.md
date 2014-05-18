@@ -28,4 +28,8 @@ pro.upload.via_ssh=true
 
 Preparing WR703N
 ----------------
-Install OpenWrt on the WR703N. Then install the "announce" package and finally run the script from this repository on the WR703N.
+Install OpenWrt on the WR703N. Set a ssh password. Then install the "announce" package and finally run the script from this repository on the WR703N.
+
+How this works
+--------------
+The Arduino announces itself to the network using Zeroconf. The Arduino IDE sees this and uses ssh into the machine. There it runs /usr/bin/merge-sketch-with-bootloader.lua (this is a blank script in our case) and then it runs /usr/bin/run-avrdude (this is where the magic happens and where avrdude is invoked to flash the Arduino).
